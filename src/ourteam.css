@@ -22,12 +22,30 @@ body {
   text-decoration: none;
 }
 
-
+.lightgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  background: #22224F;
+}
+.darkgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  background: #212145;
+}
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
   transition-duration: 0.5s;
   background-color: #2E2E3B;
+}
+
+
+.topnav-right {
+  float: right;
 }
 
 .first {
@@ -105,7 +123,11 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
-
+.grid-container1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
+}
 .grid-container div {
   margin-top: 30px;
   text-align: center;

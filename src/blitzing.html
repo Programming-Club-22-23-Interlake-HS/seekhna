@@ -31,7 +31,28 @@
   </div>
   <section class="first">
 
+
+    
+    <input id="files" type="file" onchange="readtext()">
+    <p id="output">output</p>
+    
+
   </section>
+
+  <script type="text/javascript">
+    document.getElementById('files')
+        .addEventListener('change', function() {
+          
+        var fr=new FileReader();
+        fr.onload=function(){
+            document.getElementById('output')
+                    .textContent=fr.result;
+        }
+          
+        fr.readAsText(this.files[0]);
+    })
+</script>
+
   <!-- FOOTER -->
 
   <footer class="footer">
@@ -143,3 +164,21 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
