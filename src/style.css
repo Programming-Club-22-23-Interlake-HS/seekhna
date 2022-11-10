@@ -15,7 +15,7 @@ body {
 
 }
 
-.navbar a {
+.navbar a, form {
   float: left;
   font-size: 24px;
   color: #9D9DA9;
@@ -24,6 +24,16 @@ body {
   text-decoration: none;
 
 }
+.navbar form {
+  color: #9D9DA9;
+  background-color: #1A1A24;
+}
+.navbar button {
+  background-color: #1A1A24;
+  color: #9D9DA9;
+  border-color: #9D9DA9;
+}
+
 
 
 
