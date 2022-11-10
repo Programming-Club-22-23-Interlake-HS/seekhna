@@ -10,6 +10,8 @@ body {
   overflow: hidden;
   background-color: #1A1A24;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 
 }
 
@@ -20,7 +22,9 @@ body {
   text-align: center;
   padding: 20px;
   text-decoration: none;
+
 }
+
 
 
 
