@@ -14,6 +14,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-family: 'Gotham', sans-serif;
 
 }
 
@@ -24,16 +25,19 @@ body {
   text-align: center;
   padding: 20px;
   text-decoration: none;
+  font-family: 'Gotham', sans-serif;
 
 }
 .navbar form {
   color: #9D9DA9;
   background-color: #1A1A24;
+  font-family: 'Gotham', sans-serif;
 }
 .navbar button {
   background-color: #1A1A24;
   color: #9D9DA9;
   border-color: #9D9DA9;
+  font-family: 'Gotham', sans-serif;
 }
 
 
