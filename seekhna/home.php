@@ -1,60 +1,53 @@
+<?php
+// start the session
+session_start();
+// Check if the user is not logged in, then redirect the user to login page
+if (!isset($_SESSION["userid"]) || $_SESSION["userid"] !== true) {
+    header("location: login.php");
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <!-- This page was made by Aarnav Bhat and Rahul Peesa -->
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Home</title>
 </head>
-
 
 <body>
 
   <div class="navbar">
     <div class="left-side">
-      <a href="/seekhna/home.html">Home</a>
+      <a href="/seekhna/home.php">Home</a>
       <a href="/seekhna/learn.html">Learn</a>
     </div>
-
+  
     <div class="right-side">
       <form class="form-inline">
         <input class="form-control mr-md-2" type="search" placeholder="Search" aria-label="Search">
       </form>
-      <a href="/seekhna/login.html">Login</a>
-      <a href="/seekhna/signup.html" class="signup">Sign up</a>
+      <a href="/seekhna/login/login.php">Login</a>
+      <a href="/seekhna/login/register.html" class="signup">Sign up</a>
     </div>
   </div>
-  <div>
-    <h1></h1>
-  </div>
+  <!-- Main Page -->
   <section class="first">
-
-
-
-    <input id="files" type="file" onchange="readtext()">
-    <p id="output">output</p>
-
-
+    
+    <h1>Welcome to Seekhna!</h1>
+    <p><strong>The best all in one study tool helping students all around the world study in a fun way to reach their maxiumum potential and be better prepared.</strong></p>
   </section>
 
-  <script type="text/javascript">
-    document.getElementById('files')
-      .addEventListener('change', function () {
-
-        var fr = new FileReader();
-        fr.onload = function () {
-          document.getElementById('output')
-            .textContent = fr.result;
-        }
-
-        fr.readAsText(this.files[0]);
-      })
-  </script>
+  <section class="second">
+    <h1>Welcome</h1>
+    <p>Study strategies suggested by the best teachers and students<div>
+  </section>
 
   <!-- FOOTER -->
 
@@ -150,7 +143,7 @@
           </li>
 
           <li>
-            <a href="/seekhna/login.html">Login</a>
+            <a href="/seekhna/login.php">Login</a>
           </li>
         </ul>
       </li>
