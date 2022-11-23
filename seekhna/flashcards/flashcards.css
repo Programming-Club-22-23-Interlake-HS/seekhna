@@ -17,7 +17,7 @@ body {
 
 }
 
-.navbar a, form {
+.navbar a,form, input, button {
   float: left;
   font-size: 24px;
   color: #9D9DA9;
@@ -63,8 +63,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("https://images.pexels.com/photos/9489766/pexels-photo-9489766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
-  /* Background image from Rodnae Productions on Pexels */
 }
 
 .first h1 {
@@ -74,6 +72,27 @@ body {
   box-sizing: border-box;
   font-family: 'Gotham Thin', sans-serif;
   color: #CFCFF2;
+}
+.first button {
+  height: 115%;
+  width: auto;
+  font-weight: 900;
+}
+.first div {
+  color: #CFCFF2;
+}
+
+.flashbtn {
+  color: #CFCFF2;
+  margin-right: 20px;
+  flex: 0 0 50%;
+  display: flex;
+}
+.flashbtns button{
+  justify-content: space-between;
+  align-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .first p {
@@ -127,6 +146,9 @@ body {
   padding: 0;
   box-sizing: border
 }
+.card {
+  background-color: #1A1A24;
+}
 
 
 
@@ -170,12 +192,7 @@ body {
 
 
 
-
-
-
 /* FOOTER STYLES */
-
-
 
 
 
