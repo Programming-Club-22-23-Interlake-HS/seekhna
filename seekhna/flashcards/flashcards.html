@@ -24,8 +24,8 @@
       <form class="form-inline">
         <input class="form-control mr-md-2" type="search" placeholder="Search" aria-label="Search">
       </form>
-      <a href="/seekhna/login/login.html">Login</a>
-      <a href="/seekhna/login/register.html" class="signup">Sign up</a>
+      <a href="/seekhna/login.html">Login</a>
+      <a href="/seekhna/register.html" class="signup">Sign up</a>
     </div>
   </div>
   <!-- Main Page -->
@@ -35,8 +35,17 @@
     <strong>Use flashchards to study and prepare for tests!</strong></div>
     <br>
     <div class="flashbtns">
-    <button href="/seekhna/flashcards/create.html" class="btn btn-primary"> Create <img src="https://img.icons8.com/external-febrian-hidayat-glyph-febrian-hidayat/28/000000/external-plus-ui-essential-febrian-hidayat-glyph-febrian-hidayat.png"/></button>&nbsp;&nbsp;
-    <button href="/seekhna/flashcards/myflashcards.html" class="btn btn-primary"> My Flashcards</button>
+      <button class="btn btn-primary" onclick="CreateURL()"> Create <img src="https://img.icons8.com/external-febrian-hidayat-glyph-febrian-hidayat/28/000000/external-plus-ui-essential-febrian-hidayat-glyph-febrian-hidayat.png"/></button>&nbsp;&nbsp;
+      <button class="btn btn-primary" onclick="MyFlashcardsURL()"> My Flashcards</button>
+    </div>
+    <script>
+      function MyFlashcardsURL() {
+        window.location.replace("/seekhna/flashcards/myflashcards.html")
+      }
+      function CreateURL() {
+        window.location.replace("/seekhna/flashcards/createflashcards.html")
+      }
+    </script>
     </div>
   </section>
   
