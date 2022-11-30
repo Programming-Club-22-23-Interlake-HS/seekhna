@@ -1,25 +1,27 @@
 <!-- This page was made by Aarnav Bhat -->
+<!-- Special thanks to https://codingartistweb.com/2022/08/flashcard-app-with-javascript/ for the tool -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="flashcards.css">
-  <meta name="viewport"> 
-    <title>Create Flashcards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="createflashcards.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <title>Create Flashcards</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <!-- Navbar -->
+  <!-- Navbar -->
   <div class="navbar">
     <div class="left-side">
       <a href="/seekhna/home.html">Home</a>
       <a href="/seekhna/learn.html">Learn</a>
     </div>
-  
+
     <div class="right-side">
       <form class="form-inline">
         <input class="form-control mr-md-2" type="search" placeholder="Search" aria-label="Search">
@@ -30,9 +32,36 @@
   </div>
   <!-- Main Page -->
 
-  <section class="first">
-  </section>
-  
+  <div class="container">
+    <div class="add-flashcard-con">
+      <button id="add-flashcard">Add Flashcard</button>
+    </div>
+    <!-- Display Card of Question And Answers Here -->
+    <div id="card-con">
+      <div class="card-list-container"></div>
+    </div>
+  </div>
+  <!-- Input form for users to fill question and answer -->
+  <div class="question-container hide" id="add-question-card">
+    <h2>Add Flashcard</h2>
+    <div class="wrapper">
+      <!-- Error message -->
+      <div class="error-con">
+        <span class="hide" id="error">Input fields cannot be empty!</span>
+      </div>
+      <!-- Close Button -->
+      <i class="fa-solid fa-xmark" id="close-btn"></i>
+    </div>
+    <label for="question">Question:</label>
+    <textarea class="input" id="question" placeholder="Type the question here..." rows="2"></textarea>
+    <label for="answer">Answer:</label>
+    <textarea class="input" id="answer" rows="4" placeholder="Type the answer here..."></textarea>
+    <button id="save-btn">Save</button>
+    <!-- Script -->
+    <script src="createflash.js"></script>
+  </div>
+
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__addr">
