@@ -52,7 +52,7 @@ cardButton.addEventListener(
 function viewlist() {
   var listCard = document.getElementsByClassName("card-list-container");
   var div = document.createElement("div");
-  div.classList.add("card");
+  div.classList.add("flashcard");
   //Question
   div.innerHTML += `
   <p class="question-div">${question.value}</p>`;

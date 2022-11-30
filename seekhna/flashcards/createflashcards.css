@@ -17,8 +17,12 @@
   .add-flashcard-con {
     display: flex;
     justify-content: center;
-    padding: 1.2em 1em;
-    
+    padding: 1.2em 1em;    
+  }
+  .question-div,.answer-div {
+    color: #CFCFF2;
+    font-size: larger;
+
   }
   #close-btn {
     background-color: #2E2E3B;
@@ -189,7 +193,7 @@
   @import url('https://fonts.cdnfonts.com/css/gotham');
 
   body {
-    color: #9D9DA9;
+    color: #CFCFF2;
     font-family: 'Gotham', sans-serif;
     background-color: #09090D;
   }
@@ -336,8 +340,9 @@
   }
   .card {
     background-color: #1A1A24;
+    color: #CFCFF2;
+    border-color: #0D0D31   ;
   }
-  
   
   
   
