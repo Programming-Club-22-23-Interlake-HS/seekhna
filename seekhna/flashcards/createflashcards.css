@@ -5,7 +5,8 @@
     font-family: "Poppins", sans-serif;
   }
   body {
-    background-color: #f7f9fd;
+    background-color: #09090D;
+    color: #CFCFF2;
   }
   .container {
     width: 90vw;
@@ -15,8 +16,13 @@
   }
   .add-flashcard-con {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 1.2em 1em;
+    
+  }
+  #close-btn {
+    background-color: #2E2E3B;
+    
   }
   button {
     border: none;
@@ -114,6 +120,7 @@
     padding: 0.2em;
     gap: 1.5em;
     grid-template-columns: 1fr 1fr 1fr;
+    color: #CFCFF2;
   }
   .card {
     background-color: #ffffff;
