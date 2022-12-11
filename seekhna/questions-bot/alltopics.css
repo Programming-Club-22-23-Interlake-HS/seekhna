@@ -106,7 +106,7 @@ body {
 .second {
   background-color: #1A1A24;
   width: 100%;
-  height: 600px;
+  height: auto;
   padding: 20px;
   text-align: center;
   color: #9D9DA9;
@@ -303,6 +303,16 @@ footer {
 
 .heart {
   color: #CFCFF2;
+}
+.topicstitle {
+  color: #CFCFF2;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.topics {
+  color: #f4f4f4;
+  text-decoration: solid;
+  font-size: x-large;
 }
 
 @media screen and (min-width: 24.375em) {

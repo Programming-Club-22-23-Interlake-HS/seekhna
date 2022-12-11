@@ -5,90 +5,50 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="tools.css">
-  <meta name="viewport"> 
-    <title>Tools</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="practice.css">
+  <meta name="viewport">
+  <title>Practice</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <!-- Navbar -->
+  <!-- Navbar -->
   <div class="navbar">
     <div class="left-side">
       <a href="/seekhna/home.html">Home</a>
       <a href="/seekhna/learn.html">Learn</a>
     </div>
-  
+
     <div class="right-side">
       <form class="form-inline">
         <input class="form-control mr-md-2" type="search" placeholder="Search" aria-label="Search">
       </form>
       <a href="/seekhna/login.html">Login</a>
-      <a href="/seekhna/signup.html" class="signup">Sign up</a>
+      <a href="/seekhna/register.html" class="signup">Sign up</a>
     </div>
   </div>
   <!-- Main Page -->
 
   <section class="first">
-    <h1><bold>Our Tools!</bold></h1>
-    <p><strong>Use our fun tools to study and learn!</strong></p>
+    <h1>
+    <bold>Practice</bold>
+    </h1><strong>Practice and prepare for subjects!</strong>
   </section>
 
   <section class="second">
-  <div class="d-flex p-3">
-    <div class="card" style="width: 25rem;">
-      <div class="p-3 mb-2 bg-dark text-info">
-        <img src="..." class="card-img-top" alt="Flashcard Image">
-        <div class="card-body">
-          <h2 class="card-title">Flashcards</h2>
-          <p class="card-text">Create and use flashcards to study and acheive your study goals</p>
-          <a href="flashcards/flashcards.html" class="btn btn-primary">Flashcards</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" style="width: 25rem;">
-      <div class="p-3 mb-2 bg-dark text-info">
-        <img src="https://images.pexels.com/photos/3977908/pexels-photo-3977908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Games Image">
-        <div class="card-body">
-          <h2 class="card-title">Games</h2>
-          <p class="card-text">Create and use games to study and acheive your study goals</p>
-          <a href="/seekhna/games/games.html" class="btn btn-primary">Games</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" style="width: 25rem;">
-      <div class="p-3 mb-2 bg-dark text-info">
-        <img src="..." class="card-img-top" alt="Blizting Image">
-        <div class="card-body">
-          <h2 class="card-title"></h2>
-          <p class="card-text">Blitzing is one of the best study methods out there- match up your notes for excellent results.</p>
-          <a href="blitzing.html" class="btn btn-primary">Blitzing</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
-  <section class="second">
-  <div class="d-flex p-3">
-    <div class="card" style="width: 25rem;">
-      <div class="p-3 mb-2 bg-dark text-info">
-        <img src="..." class="card-img-top" alt="Questions-Bot Image">
-        <div class="card-body">
-          <h2 class="card-title">Practice</h2>
-          <p class="card-text">Practice and prepare for specific topics.</p>
-          <a href="/seekhna/questions-bot/practice.html" class="btn btn-primary">Practice</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
+    <h1>My Topics</h1>
+    <div class="flashbtns"><br>
+    <button class="btn btn-primary" onclick="alltopics()">All Topics</button></div>
+    <script>
+        function alltopics() {
+            window.location.replace("/seekhna/questions-bot/alltopics.html")
+        }
+    </script>
   </section>
 
   <!-- FOOTER -->
-
   <footer class="footer">
     <div class="footer__addr">
       <h1 class="footer__logo">Seekhna</h1>
@@ -177,11 +137,11 @@
           </li>
 
           <li>
-            <a href="#">Help</a>
+            <a href="/seekhna/help.html">Help</a>
           </li>
 
           <li>
-            <a href="#">Login</a>
+            <a href="/seekhna/login.html">Login</a>
           </li>
         </ul>
       </li>

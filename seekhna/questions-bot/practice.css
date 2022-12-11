@@ -73,6 +73,31 @@ body {
   font-family: 'Gotham Thin', sans-serif;
   color: #CFCFF2;
 }
+.first button {
+  height: 115%;
+  width: auto;
+  font-weight: 900;
+}
+.first div {
+  color: #CFCFF2;
+}
+
+.flashbtn {
+  color: #CFCFF2;
+  margin-right: 20px;
+  flex: 0 0 50%;
+  display: flex;
+}
+.flashbtns button{
+  justify-content: space-between;
+  align-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  width: auto ;
+  height: auto;
+  font-weight:bolder;
+}
 
 .first p {
   font-size: 24px;
@@ -99,9 +124,6 @@ body {
   background-color: #2E2E3B;
   color: #9D9DA9;
 }
-.d-flex p-3, .card {
-  border-color: none;
-}
 
 .second {
   background-color: #1A1A24;
@@ -119,7 +141,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-color: none;
 
 }
 
@@ -127,7 +148,8 @@ body {
   font-size: 48px;
   margin: 0;
   padding: 0;
-  box-sizing: border
+  box-sizing: border;
+  color:#CFCFF2;
 }
 .card {
   background-color: #1A1A24;
@@ -175,12 +197,7 @@ body {
 
 
 
-
-
-
 /* FOOTER STYLES */
-
-
 
 
 

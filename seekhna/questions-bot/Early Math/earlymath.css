@@ -17,7 +17,7 @@ body {
 
 }
 
-.navbar a,form, input, button {
+.navbar a, form {
   float: left;
   font-size: 24px;
   color: #9D9DA9;
@@ -63,6 +63,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("https://images.pexels.com/photos/9489766/pexels-photo-9489766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+  /* Background image from Rodnae Productions on Pexels */
 }
 
 .first h1 {
@@ -99,9 +101,6 @@ body {
   background-color: #2E2E3B;
   color: #9D9DA9;
 }
-.d-flex p-3, .card {
-  border-color: none;
-}
 
 .second {
   background-color: #1A1A24;
@@ -119,7 +118,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-color: none;
 
 }
 
@@ -128,9 +126,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border
-}
-.card {
-  background-color: #1A1A24;
 }
 
 
