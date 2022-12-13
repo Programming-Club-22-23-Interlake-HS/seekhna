@@ -18,7 +18,7 @@ const questions = [
     },
 
     {
-        question: "5-4:?",
+        question: "5-4?",
         optionA: "2",
         optionB: "9",
         optionC: "6",
