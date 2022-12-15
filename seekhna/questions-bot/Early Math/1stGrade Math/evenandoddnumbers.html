@@ -1,4 +1,4 @@
-<!-- This page was made by Aarnav Bhat -->
+<!-- This page was made by Aarnav Bhat and Aryan Agrawal-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +9,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="/seekhna/questions-bot/Early Math/earlymath.css">
   <meta name="viewport">
-  <title>1st Grade Math</title>
+  <title>Even and Odd Numbers</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -31,7 +31,7 @@
   </div>
   <!-- Main Page -->
 
-  <body onload="NextQuestion(0)">
+  <body onload="NextQuestion(0)" onload="checkanswernumbers()">
     <main>
       <!-- creating a modal for when quiz ends -->
       <div class="modal-container" id="score-modal">
@@ -58,8 +58,8 @@
       <div class="game-quiz-container">
 
         <div class="game-details-container">
-          <h1>Score : <span id="player-score"></span> / 10</h1>
-          <h1> Question : <span id="question-number"></span> / 10</h1>
+          <h1>Score : <span id="player-score"></span> / 5</h1>
+          <h1> Question : <span id="question-number"></span> / 5</h1>
         </div>
 
         <div class="game-question-container">
@@ -118,7 +118,7 @@
 
       </div>
     </main>
-    <script src="1gradepractice.js"></script>
+    <script src="evenodd.js"></script>
   </body>
   <!-- FOOTER -->
   <footer class="footer">
