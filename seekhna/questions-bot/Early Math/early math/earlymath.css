@@ -68,8 +68,6 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("https://images.pexels.com/photos/9489766/pexels-photo-9489766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
-    /* Background image from Rodnae Productions on Pexels */
 }
 
 .first h1 {
@@ -413,6 +411,26 @@ span label {
   font-weight: 600;
   color:#CFCFF2;
 }
+.card-body {
+  text-align:left;
+  border-color: none;
+}
+.card-title {
+  font-weight: 700;
+
+}
+.card a{
+  color:#CFCFF2;
+  font-weight: 350;
+  font-size: smaller;
+  border-color: none;
+}
+.card {
+  border-radius: 0%;
+  border-color: none;
+}
+
+
 
 span label:hover {
   -ms-transform: scale(1.12);
