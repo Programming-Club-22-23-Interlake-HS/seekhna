@@ -135,7 +135,7 @@
                 `;
             break;
       
-          case "william.sqlite":
+          case "ss.sqlite":
             selectTable.innerHTML = `
                   <option value="colors">colors</option>
                   <option value="months">months</option>
