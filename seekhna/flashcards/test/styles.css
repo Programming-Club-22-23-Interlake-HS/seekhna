@@ -1,0 +1,537 @@
+/* NORMALIZE CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.1s linear; /* smooth transitions */
+  }
+  
+  html {
+    font-size: 100%;
+    background-color: black;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Quicksand", sans-serif;
+  
+    font-size: 1.6rem;
+    color: white;
+    background: linear-gradient(
+      109.6deg,
+      rgb(43, 1, 91) 13.4%,
+      rgb(122, 2, 54) 100.2%
+    );
+    height: auto;
+    /* height: 100vh; */
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-container,
+  .flashcards-statistics-page {
+    width: 40%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+  
+    background-color: rgb(0 0 0 / 50%);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 1);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 2rem;
+  }
+  
+  /* ******************** LOGO ******************** */
+  nav > h1 {
+    font-family: "Signika", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+  
+  nav > h1:hover {
+    cursor: default;
+    animation: color-change 10s infinite alternate;
+  }
+  
+  @keyframes color-change {
+    0% {
+      color: white;
+    }
+  
+    33% {
+      color: yellow;
+    }
+  
+    66% {
+      color: skyblue;
+    }
+    100% {
+      color: yellowgreen;
+    }
+  }
+  
+  /* ******************* END LOGO ******************* */
+  
+  /* ******************** MAINPAGE ******************** */
+  
+  .mainpage-form {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .select1-container,
+  .select2-container,
+  .select3-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 7px 0px;
+  }
+  
+  select {
+    background-color: black;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+    width: 35%;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  select:hover {
+    cursor: pointer;
+  }
+  
+  .mainpage-form > input {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(5, 130, 51);
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+  }
+  
+  .mainpage-form > input:hover {
+    cursor: pointer;
+    background-color: rgb(5, 176, 68);
+    transform: scale(1.02);
+    transition: 0.3s linear;
+  }
+  
+  /* ******************* END MAINPAGE ******************* */
+  
+  /* ******************** LEARNPAGE ******************** */
+  
+  .learnpage {
+    /* initial */
+    display: none;
+  }
+  
+  /* common for buttons */
+  button {
+    font-size: 1.5rem;
+    padding: 7px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+  }
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.3s linear;
+  }
+  
+  /* back button */
+  .return-button {
+    margin: 40px 0px 10px 40px;
+    background-color: rgba(163, 30, 30, 0.649);
+  }
+  .return-button:hover {
+    background-color: rgb(185, 19, 19);
+  }
+  
+  .learnpage > h1 {
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode",
+      "Lucida Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .learnpage > h1:hover {
+    cursor: default;
+  }
+  
+  .table-container > p {
+    font-size: 1.5rem;
+    width: 90%;
+    padding-bottom: 5px;
+  }
+  
+  .table-container > p:hover {
+    cursor: default;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-size: 1rem;
+  }
+  
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  table {
+    width: 90%;
+  }
+  
+  th,
+  td {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  /* export button */
+  .print-table-btn {
+    float: right;
+    margin: 20px 40px 40px 0;
+    background-color: rgb(20, 101, 7);
+  }
+  .print-table-btn:hover {
+    background-color: rgb(29, 153, 10);
+  }
+  
+  /* === BUTTON SCROLL-UP === */
+  .scrollUpBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 9px 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    opacity: 0.5;
+  }
+  
+  .scrollUpBtn:hover {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    opacity: 1;
+    transition-duration: 0.3s;
+  }
+  
+  /* === END BUTTON SCROLL-UP === */
+  
+  /* ******************* END LEARNPAGE ******************* */
+  
+  /* ******************** FLASHCARS ******************** */
+  
+  .flashcards-page {
+    /* initial */
+    display: none;
+  }
+  
+  .container-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 40px 0px;
+  }
+  
+  /* ******************* CARD STYLES ******************* */
+  .card {
+    display: block;
+    background-color: transparent;
+    width: 70%;
+    height: 290px;
+    perspective: 1000px; /*3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .check-card,
+  .result-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  
+    /* common appearance */
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .check-card {
+    background-color: rgb(69, 51, 126);
+  }
+  
+  .result-card {
+    background-color: red;
+    transform: rotateY(180deg);
+    /* TODO: ENTER STYLE BY JS */
+  }
+  
+  /* STYLING ELEMENTS INSIDE CARD */
+  .original-meaning {
+    font-size: 2rem;
+  }
+  
+  .user-translation {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  .result-user-translation {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    width: 80%;
+    padding: 5px;
+  }
+  
+  /* ******************* END CARD STYLES ******************* */
+  
+  .btn-check {
+    margin-top: 30px;
+    background-color: black;
+    width: 40%;
+    transition: 1s ease-in-out;
+  }
+  
+  /* ******************* END FLASHCARDS ******************* */
+  
+  /* ******************* LOADING SCREEN ******************* */
+  
+  .loading-screen {
+    display: none; /*changes by js to 'flex' */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /* ******************* END LOADING SCREEN ******************* */
+  
+  /* ******************* FLASHCARDS STATISTICS ******************* */
+  
+  .flashcards-statistics-page {
+    display: none;
+    font-size: 1.5rem;
+    padding: 25px;
+  }
+  
+  .flashcards-statistics-page > h3 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .flashcards-statistics-page > p {
+    padding-left: 40px;
+  }
+  
+  /* ******************* END FLASHCARDS STATISTICS ******************* */
+  
+  /* ******************** AUTHOR ******************** */
+  .author {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 50px;
+  }
+  
+  .author:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+  /* ******************* END AUTHOR ******************* */
+  
+  /* ******************** MEDIA QUERIES ******************** */
+  
+  /* Javascript changes content-container width from 1550px to 760px */
+  /* look at autoSetContentContainerWidth() function */
+  @media (max-width: 760px) {
+    .content-container,
+    .flashcards-statistics-page {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    html {
+      font-size: 90%;
+    }
+    nav > h1 {
+      font-size: 3.5rem;
+    }
+  
+    .select1-container,
+    .select2-container,
+    .select3-container {
+      width: 90%;
+    }
+  
+    .card {
+      width: 85%;
+      height: 260px;
+    }
+  
+    .check-card,
+    .result-card {
+      padding: 30px 0;
+    }
+  
+    .flashcards-statistics-page > p {
+      padding-left: 20px;
+    }
+  
+    .btn-check {
+      width: 50%;
+    }
+  
+    .return-button {
+      margin: 30px 0px 10px 20px;
+    }
+  
+    .print-table-btn {
+      margin: 20px 30px 20px 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    html {
+      font-size: 70%;
+    }
+  
+    select {
+      font-size: 1.2rem;
+    }
+  
+    .mainpage-form {
+      padding: 20px 0;
+    }
+  
+    .scrollUpBtn {
+      right: 15px;
+    }
+  
+    .original-meaning,
+    .result-original-meaning {
+      font-size: 2.5rem;
+    }
+  
+    .card {
+      height: 200px;
+    }
+  
+    .check-card,
+    .result-card {
+      padding: 10px 0;
+    }
+  
+    .author {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 370px) {
+    html {
+      font-size: 60%;
+    }
+  
+    select {
+      font-size: 1rem;
+    }
+  
+    .print-table-btn {
+      margin: 20px 20px 20px 0;
+    }
+  
+    .card {
+      height: 150px;
+    }
+  
+    .original-meaning,
+    .result-original-meaning {
+      font-size: 2rem;
+    }
+  }
+  
+  /* ******************** END MEDIA QUERIES ******************** */
