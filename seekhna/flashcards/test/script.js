@@ -130,8 +130,8 @@
           case "math.sqlite":
             selectTable.innerHTML = `
                 <option value="algebra1">Algebra 1</option>
-                <option value="school">school</option>
-                <option value="travelling">travelling</option>
+                \<option value="algebra2">Algebra 2</option>
+                <option value="prealgebra">Pre-Algebra</option>
                 `;
             break;
       
