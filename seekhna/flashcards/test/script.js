@@ -129,7 +129,7 @@
         switch (user) {
           case "math.sqlite":
             selectTable.innerHTML = `
-                <option value="food">food</option>
+                <option value="algebra1">Algebra 1</option>
                 <option value="school">school</option>
                 <option value="travelling">travelling</option>
                 `;
@@ -137,8 +137,8 @@
       
           case "ss.sqlite":
             selectTable.innerHTML = `
-                  <option value="colors">colors</option>
-                  <option value="months">months</option>
+                  <option value="Unit1">Unit 1</option>
+                  <option value="Unit2">Unit 2</option>
                   `;
             break;
       
@@ -148,7 +148,7 @@
         }
       };
 
-      //load at the beggining in 'Select the table' tables of user arthur.sqlite
+      //load at the beggining in 'Select the table' tables of user math.sqlite
       displayUserTables(selectUser.value)
 
       let databaseFile;
