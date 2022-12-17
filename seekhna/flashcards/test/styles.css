@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
 /* NORMALIZE CSS */
 * {
   padding: 0;
@@ -14,17 +15,24 @@ html {
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Gotham", sans-serif;
 
   font-size: 1.6rem;
-  color: white;
+  color: #CFCFF2;
   background: linear-gradient(109.6deg,
       rgb(43, 1, 91) 13.4%,
       rgb(122, 2, 54) 100.2%);
   height: auto;
   /* height: 100vh; */
 }
-
+.select1-container,.select2-container,.select3-container{
+  color: #CFCFF2;
+}
+.start-button {
+  font-family: "Gotham",sans-serif;
+  width: 120px;
+  flex: auto;
+}
 .navbar {
   overflow: hidden;
   background-color: #1A1A24;
