@@ -127,7 +127,7 @@
 
        const displayUserTables = (user) => {
         switch (user) {
-          case "arthur.sqlite":
+          case "math.sqlite":
             selectTable.innerHTML = `
                 <option value="food">food</option>
                 <option value="school">school</option>
