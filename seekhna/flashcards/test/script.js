@@ -305,8 +305,8 @@
         learnpageTable.innerHTML = `
         <tr>
         <th>ID</th>
-        <th>ENGLISH</th>
-        <th>POLISH</th>
+        <th>Term</th>
+        <th>Answer</th>
         </tr>
         `;
       }
