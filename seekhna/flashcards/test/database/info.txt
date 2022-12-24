@@ -1,0 +1,1 @@
+use "DB Browser for SQLite" to edit database
