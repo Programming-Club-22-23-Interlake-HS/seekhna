@@ -64,11 +64,24 @@ function viewlist() {
   //Link to show/hide answer
   var link = document.createElement("a");
   link.setAttribute("href", "#");
-  link.setAttribute("class", "show-hide-btn");
-  link.innerHTML = "Show/Hide";
+  link.setAttribute("class", "show-hide-btn"); 
+  var show = false; 
+  link.innerHTML = "Show Answer";
   link.addEventListener("click", () => {
     displayAnswer.classList.toggle("hide");
+    if (show == false) {
+      show = true;
+      link.innerHTML = "Hide Answer";
+    } else {
+      show = false;
+      link.innerHTML = "Show Answer";
+    }
   });
+  /* if (show == false) {
+    link.innerHTML = "Show Answer";
+  } else {
+    link.innerHTML = "Hide Answer";
+  } */
 
   div.appendChild(link);
   div.appendChild(displayAnswer);
